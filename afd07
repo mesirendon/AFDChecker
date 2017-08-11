@@ -1,0 +1,38 @@
+a,b
+q0,q1,q2,q3
+q0
+q1,q2
+8
+q0,a,q1
+q0,b,q3
+q1,a,q2
+q1,b,q1
+q2,a,q3
+q2,b,q3
+q3,a,q3
+q3,b,q3
+12
+a
+
+ab
+ababa
+abbbbbb
+abbbbbba
+baaaab
+aa
+abaa
+abbbba
+baaaab
+abbbbbca
+
+# Σ={a,b}
+# L= ab* U ab*a
+# Formato:
+# Elementos de Σ
+# Estados de Q
+# Estado inicial q0
+# Estados de F
+# Número de funciones de transición
+# n funciones de transición
+# Número de casos de prueba
+# m casos de prueba (si existe un λ y qo ∈ F, entonces es una cadena valida)

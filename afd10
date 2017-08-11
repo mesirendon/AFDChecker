@@ -1,0 +1,36 @@
+1,0
+q0,q1,q2
+q0
+q0,q1
+6
+q0,0,q0
+q0,1,q1
+q1,0,q0
+q1,1,q2
+q2,0,q2
+q2,1,q2
+12
+
+0
+1
+00000
+00001000101001
+1001
+101001
+110001
+100010001100101
+100000200001000001
+1000000000001000000010
+100011001000010000
+
+# Σ={0,1}
+# L=Lenguaje de todas las cadenas que no contienen dos unos consecutivos
+# Formato:
+# Elementos de Σ
+# Estados de Q
+# Estado inicial q0
+# Estados de F
+# Número de funciones de transición
+# n funciones de transición
+# Número de casos de prueba
+# m casos de prueba (si existe un λ y qo ∈ F, entonces es una cadena valida)
