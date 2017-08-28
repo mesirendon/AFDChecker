@@ -1,9 +1,17 @@
 import sys
+from graphviz import Digraph
+
+f = Digraph('afd', filename='afd.afd', format='png')
+f.attr(rankdir='LR', size='8,5')
 
 sigma = sys.stdin.readline().strip().split(',')
 Q     = sys.stdin.readline().strip().split(',')
 s0    = sys.stdin.readline().strip()
 F     = sys.stdin.readline().strip().split(',')
+
+f.attr('node', shape='doublecircle')
+for i in F:
+    f.node(i)
 
 delta = {}
 
@@ -12,6 +20,14 @@ for i in range( int( sys.stdin.readline().strip() ) ):
     if qinput not in delta:
         delta[qinput] = {}
     (delta[qinput])[el] = qoutput
+
+f.attr('node', shape='circle')
+for i in delta:
+    for j in delta[i]:
+        f.edge(i, delta[i][j], label=j)
+        print i, " - ", delta[i][j], j
+
+f.view()
 
 for i in range( int( sys.stdin.readline().strip() ) ):
     s = s0
