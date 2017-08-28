@@ -1,7 +1,14 @@
 # AFD Checker
 Programa simple en python para determinar si una cadena dada es válida o no, para un autómata definido. A continuación se presenta el formato que debe cumplir el archivo de entrada para usar el programa.
 
-Formato:
+## Dependencias
+Se necesita tener instalado graphviz.
+
+```bash
+sudo apt-get install graphviz
+```
+
+## Formato
 Elementos de Σ
 Estados de Q
 Estado inicial q0
@@ -18,3 +25,8 @@ La forma de ejecutar el programa es:
 ```bash
 $ python afd.py < afdXX
 ```
+
+## Grafos
+Este programa genera los grafos del AFD a partir del mismo archivo.
+
+![AFD](afd.afd.png "AFD Generado")
